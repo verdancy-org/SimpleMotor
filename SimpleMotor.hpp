@@ -16,8 +16,6 @@ class SimpleMotor
     bool closed_loop = true;
   };
 
-  virtual ~SimpleMotor() = default;
-
   virtual LibXR::ErrorCode Enable() = 0;
   virtual void Disable() = 0;
   virtual void Relax() = 0;
